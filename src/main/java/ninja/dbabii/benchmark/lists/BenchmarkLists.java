@@ -23,16 +23,11 @@ import org.openjdk.jmh.annotations.State;
 @OutputTimeUnit(TimeUnit.NANOSECONDS)
 public class BenchmarkLists {
 
-//    private static final int INIT_SIZE = 1024;
-//    private final Integer[] ints = new Integer[INIT_SIZE];
-//    private final List<Integer> lList = new LinkedList<>();
-//    private final List<Integer> aList = new ArrayList<>();
-//    private final Random random = new Random();
-    int INIT_SIZE = 1024;
-    Integer[] ints = new Integer[INIT_SIZE];
-    List<Integer> lList = new LinkedList<>();
-    List<Integer> aList = new ArrayList<>();
-    Random random = new Random();
+    private static final int INIT_SIZE = 1024;
+    private final Integer[] ints = new Integer[INIT_SIZE];
+    private final List<Integer> lList = new LinkedList<>();
+    private final List<Integer> aList = new ArrayList<>();
+    private final Random random = new Random();
 
     @Setup
     public void initInts() {
